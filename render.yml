@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: freefire-id-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TOKEN
+        value: 8293568547:AAGXuagCmlID_qso9rmcpipVX97Gmsu2Ksk
