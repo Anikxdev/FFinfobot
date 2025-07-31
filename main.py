@@ -7,7 +7,7 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 # Your API endpoint
-API_URL = "https://nr-codex-info.vercel.app/get?uid="
+API_URL = "https://nr-codex-info.vercel.app/get?uid={}"
 
 # /get command handler
 async def get_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
